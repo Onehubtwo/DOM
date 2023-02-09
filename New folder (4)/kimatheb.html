@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add styles for the shopping cart */
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .cart-item .item-name {
+        font-weight: bold;
+      }
+
+      .cart-item .item-price {
+        color: green;
+      }
+
+      .cart-item .item-quantity {
+        display: flex;
+        align-items: center;
+      }
+
+      .cart-item .item-quantity button {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      .cart-item .item-quantity button:hover {
+        background-color: #ccc;
+      }
+
+      .cart-item .item-heart {
+        color: #ccc;
+        cursor: pointer;
+        font-size: 20px;
+      }
+
+      .cart-item .item-heart.liked {
+        color: red;
+      }
+
+      #total {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cart">
+      <!-- Add the items to the shopping cart -->
+      <div class="cart-item">
+        <div class="item-name">Item 1</div>
+        <div class="item-quantity">
+          <button class="minus">-</button>
+          <div class="quantity" >0</div>
+          <button class="plus">+</button>
+        </div>
+        <div class="item-price"><span>£</span>
+		<span>10.00</span></div>
+        <div class="item-heart">&hearts;</div>
+      </div>
+      <div class="cart-item">
+        <div class="item-name">Item 2</div>
+        <div class="item-quantity">
+          <button class="minus">-</button>
+          <div class="quantity">0</div>
+          <button class="plus">+</button>
+        </div>
+        <div class="item-price"><span>£</span>
+		<span>5.00</span></div>
+        <div class="item-heart">&hearts;</div>
+      </div>
+      <!-- Show the total price -->
+      <div id="total"><span>Total : £ </span><span>0</span></div>
+    </div>
+	<script src="prog.js"></script>
